@@ -1,0 +1,143 @@
+
+:root {
+  --ciruela: #4a2340;
+  --ciruela-claro: #6b3a5e;
+  --rosa: #e9d5dc;
+  --dorado: #a8814f;
+  --fondo: #fbf9fa;
+  --texto: #2a2230;
+  --gris: #6d6573;
+  --borde: #ddd2d8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+header {
+  background: var(--ciruela);
+  color: #fff;
+  padding: 48px 20px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 2.4rem;
+  margin: 0 0 6px;
+}
+
+header p { margin: 4px 0; color: var(--rosa); }
+
+nav {
+  background: #fff;
+  border-bottom: 1px solid var(--borde);
+  text-align: center;
+  padding: 12px 10px;
+}
+
+nav a {
+  color: var(--ciruela);
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 0.95rem;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 10px 20px 50px;
+}
+
+section { margin-top: 44px; }
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  color: var(--ciruela);
+  font-size: 1.7rem;
+  border-bottom: 2px solid var(--dorado);
+  padding-bottom: 6px;
+}
+
+h3 { color: var(--ciruela-claro); margin-bottom: 4px; }
+
+ul { padding-left: 22px; }
+li { margin-bottom: 4px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 0.93rem;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid var(--borde);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th { background: var(--rosa); color: var(--ciruela); }
+
+pre {
+  background: #2a2230;
+  color: #f1e9ee;
+  padding: 14px 16px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+  background: var(--rosa);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre code { background: none; padding: 0; }
+
+.colores { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0; }
+
+.color {
+  width: 120px;
+  border: 1px solid var(--borde);
+  background: #fff;
+  font-size: 0.82rem;
+}
+
+.color div { height: 60px; }
+.color p { margin: 0; padding: 6px 8px; line-height: 1.35; }
+
+.nota {
+  border-left: 4px solid var(--dorado);
+  background: #fff;
+  padding: 10px 14px;
+  margin: 16px 0;
+}
+
+footer {
+  text-align: center;
+  color: var(--gris);
+  font-size: 0.85rem;
+  padding: 24px 10px;
+  border-top: 1px solid var(--borde);
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
+  nav a { display: inline-block; margin: 4px 8px; }
+}
